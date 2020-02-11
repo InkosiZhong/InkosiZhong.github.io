@@ -99,7 +99,7 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    5.1k
+                    5k
                 </span>
                 
                 
@@ -167,20 +167,8 @@ python -c &quot;import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([10
 <p>若希望只使用CPU进行训练，至此结束。</p>
 <blockquote>
 <h2 id="GPU支持"><a href="#GPU支持" target="_blank" rel="noopener" class="headerlink" title="GPU支持"></a>GPU支持</h2><p>对于高处理能力GPU，令其进行DNN训练的算力是很可观的，通常可以达到CPU运算速度的数倍。<br>在此，只涉及到NVIDIA显卡的说明。<br>根据以上<code>对应配置</code>模块提供的信息，找到匹配自己软硬件的CUDA、cuDNN版本。</p>
-</blockquote>
-<blockquote>
-<h3 id="CUDA"><a href="#CUDA" target="_blank" rel="noopener" class="headerlink" title="CUDA"></a>CUDA</h3></blockquote>
-<blockquote>
-<p>下载后打开，自动解压到所选路径后开始安装。安装时可选自定义，若显卡驱动版本高于CUDA安装版本，可<code>取消勾选Driver</code>，否则会重装驱动。<br><img src="CUDA.png" alt="选择自定义"></p>
-</blockquote>
-<blockquote>
-<p><img src="CUDAD.png" alt="取消勾选Driver"></p>
-</blockquote>
-<blockquote>
-<h3 id="cuDNN"><a href="#cuDNN" target="_blank" rel="noopener" class="headerlink" title="cuDNN"></a>cuDNN</h3><p>下载后解压，将其中文件夹内文件合并于CUDA安装目录下同名文件夹内。默认路径：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1</p>
-</blockquote>
-<blockquote>
-<p>最后将以下路径填入系统PATH即可。<br><img src="CUDAP.png" alt="系统属性-&gt;环境变量-&gt;系统变量-&gt;PATH"></p>
+<h3 id="CUDA"><a href="#CUDA" target="_blank" rel="noopener" class="headerlink" title="CUDA"></a>CUDA</h3><p>下载后打开，自动解压到所选路径后开始安装。安装时可选自定义，若显卡驱动版本高于CUDA安装版本，可<code>取消勾选Driver</code>，否则会重装驱动。<br><img src="CUDA.png" alt="选择自定义"><br><img src="CUDAD.png" alt="取消勾选Driver"></p>
+<h3 id="cuDNN"><a href="#cuDNN" target="_blank" rel="noopener" class="headerlink" title="cuDNN"></a>cuDNN</h3><p>下载后解压，将其中文件夹内文件合并于CUDA安装目录下同名文件夹内。默认路径：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1<br>最后将以下路径填入系统PATH即可。<br><img src="CUDAP.png" alt="系统属性-&gt;环境变量-&gt;系统变量-&gt;PATH"></p>
 </blockquote>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
