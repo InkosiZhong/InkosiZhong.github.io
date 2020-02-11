@@ -149,19 +149,22 @@
 <h2 id="Anaconda3"><a href="#Anaconda3" target="_blank" rel="noopener" class="headerlink" title="Anaconda3"></a>Anaconda3</h2><p>作为替代，选择<a href="https://www.anaconda.com/distribution/" target="_blank" rel="noopener">Anaconda3</a>,安装过程中选择<code>只为当前用户安装否则使用管理员权限打开</code>，并<code>取消勾选添加到环境变量</code>。<br><img src="A3PATH.png" alt="取消勾选添加到环境变量"></p>
 <p>待安装程序结束后，添加以下三个路径。<br><img src="A3PATH1.png" alt="系统属性-&gt;环境变量-&gt;your_id的用户变量-&gt;PATH"></p>
 <h2 id="虚拟环境"><a href="#虚拟环境" target="_blank" rel="noopener" class="headerlink" title="虚拟环境"></a>虚拟环境</h2><h3 id="Virtualenv-1"><a href="#Virtualenv-1" target="_blank" rel="noopener" class="headerlink" title="Virtualenv"></a>Virtualenv</h3><p>在CMD中依次输入以下指令，其中前2个指令分别创建并激活了虚拟环境；指令3、4用于检验；指令5用于退出虚拟环境，在结束配置前不要输入。</p>
-<pre><code class="javascript">C:\&gt; virtualenv --system-site-packages -p python3 ./venv
+<pre><code class="bash">C:\&gt; virtualenv --system-site-packages -p python3 ./venv
 (venv)C:\&gt; .\venv\Scripts\activate
 (venv)C:\&gt; pip install --upgrade pip
 (venv)C:\&gt; pip list  # show packages installed within the virtual environment
 (venv)C:\&gt; deactivate  # don&#39;t exit until you&#39;re done using TensorFlow</code></pre>
 <p>然而我在指令1处产生错误，提示</p>
-<pre><code>OSError: [WinError 1920] 系统无法访问此文件。: &#39;C:\\Users\\INKOSIHZONG\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\\python.exe&#39;</code></pre><p>设法解决无果，遂更换Anaconda3方案。</p>
+<pre><code class="bash">OSError: [WinError 1920] 系统无法访问此文件。: &#39;C:\\Users\\INKOSIHZONG\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\\python.exe&#39;</code></pre>
+<p>设法解决无果，遂更换Anaconda3方案。</p>
 <h3 id="Anaconda3-1"><a href="#Anaconda3-1" target="_blank" rel="noopener" class="headerlink" title="Anaconda3"></a>Anaconda3</h3><p>安装Anaconda3主要的目的是使用conda指令,在此只列出前2个指令</p>
-<pre><code>$ conda create -n venv pip python=3.7  # select python version
-$ source activate venv</code></pre><p>该指令使用CMD可能会产生报错，推荐使用随Anaconda3安装的<code>Anaconda Prompt(Anaconda3)</code>。</p>
+<pre><code class="bash">$ conda create -n venv pip python=3.7  # select python version
+$ source activate venv</code></pre>
+<p>该指令使用CMD可能会产生报错，推荐使用随Anaconda3安装的<code>Anaconda Prompt(Anaconda3)</code>。</p>
 <h3 id="Tensorflow"><a href="#Tensorflow" target="_blank" rel="noopener" class="headerlink" title="Tensorflow"></a>Tensorflow</h3><p>准备工作已经完毕，可以使用pip一条指令安装以及确认</p>
-<pre><code>pip install --upgrade tensorflow
+<pre><code class="bash">pip install --upgrade tensorflow
 python -c &quot;import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</code></pre>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="false">
