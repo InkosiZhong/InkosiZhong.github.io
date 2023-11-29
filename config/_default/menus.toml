@@ -29,8 +29,8 @@
 #    weight = 5
 
 [[main]]
-    identifier = "timeline"
-    name = "Timeline"
+    identifier = "readmore"
+    name = "Read more"
     url = "/tags"
     weight = 6
 
