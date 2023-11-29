@@ -4,7 +4,7 @@
   <header class="flex flex-col gap-2">
     <h2 class="title-median">{{ .Title }}</h2>
 
-    <div class="meta">
+    <div class="meta sm:flex-row">
       {{/* Publish date */}}
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
         {{ .PublishDate.Format "02/01/2006" }}
@@ -18,13 +18,14 @@
           </a>
         {{ end }} 
       {{ end }}
+      
 
       {{ if .Params.Period }}
-        <p>{{ .Params.Period }}</p>
+        <nobr>{{ .Params.Period }}</nobr>
       {{ end }}
 
       {{ if .Params.Rating }}
-        <p>{{ .Params.Rating }}</p>
+        <nobr>{{ .Params.Rating }}</nobr>
       {{ end }}
 
       {{ if .Params.Author }}
@@ -33,12 +34,13 @@
       
       {{ if .Params.link }}
       <a class="categories" href="{{ .Params.link }}">
-        Link
+        <nobr>Link</nobr>
       </a>
       {{ end }}
+      
       {{ if .Params.pdf }}
       <a class="categories" href="{{ .Params.pdf }}">
-        PDF
+        <nobr>PDF</nobr>
       </a>
       {{ end }}
     </div>
