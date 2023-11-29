@@ -4,11 +4,8 @@ date: {{ .Date }}
 draft: true # Set 'false' to publish
 tableOfContents: false # Enable/disable Table of Contents
 description: ''
-rating: ''
-author: ''
-period: ''
-link: ''
-pdf: ''
+categories:
+  - Sem categoria
 tags:
   -
 ---

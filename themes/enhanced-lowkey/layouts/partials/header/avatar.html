@@ -3,12 +3,13 @@
 
 <div class="flex-none rounded-full overflow-hidden">
   <style>
-    img {
+    .avator {
       width: 8em;
     }
   </style>
   <a href="{{ .Site.BaseURL }}">
     <img
+      class="avator"
       srcset="{{- with $tiny.RelPermalink -}}{{.}} 80w{{- end -}}"
       src="{{ $avatar.RelPermalink }}"
       width="{{ $avatar.Width }}"

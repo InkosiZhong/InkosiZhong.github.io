@@ -18,6 +18,29 @@
           </a>
         {{ end }} 
       {{ end }}
+
+      {{ if .Params.Period }}
+        <p>{{ .Params.Period }}</p>
+      {{ end }}
+
+      {{ if .Params.Rating }}
+        <p>{{ .Params.Rating }}</p>
+      {{ end }}
+
+      {{ if .Params.Author }}
+        <p>{{ .Params.Author }}</p>
+      {{ end }}
+      
+      {{ if .Params.link }}
+      <a class="categories" href="{{ .Params.link }}">
+        Link
+      </a>
+      {{ end }}
+      {{ if .Params.pdf }}
+      <a class="categories" href="{{ .Params.pdf }}">
+        PDF
+      </a>
+      {{ end }}
     </div>
   </header>
 
