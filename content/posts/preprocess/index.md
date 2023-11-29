@@ -4,6 +4,8 @@ draft: false
 date: 2022-07-10
 description: "In this work, we propose a preprocessing enhanced image compression method for machine vision tasks to address this challenge. Instead of relying on the learned image codecs for end-to-end optimization, our framework is built upon the traditional non-differential codecs."
 period: "B.S."
+link: "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:u-x6o8ySG0sC"
+pdf: "https://arxiv.org/pdf/2206.05650"
 tags:
   - Publications
 ---
