@@ -3,9 +3,10 @@ isSinglePage = true
 
 # Meta Config
 description = "Hello"
+favicon = "/img/favicon.ico"
 
 # Header Configuration
-avatar = "img/my-profile.jpg"
+avatar = "/img/my-profile.jpg"
 
 # disqus is a comment system. see https://disqus.com
 disqusShortname = ""
