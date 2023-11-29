@@ -1,20 +1,15 @@
 {{ define "main" }} 
 
-<div class="flex flex-col gap-1">
-  <h1 class="title-small">
-    {{ if .Params.header }}
-      {{ .Params.header }}
-    {{ else }}
-      {{ .Title }}
-    {{ end }}
-  </h1>
+{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} 
+{{ $paginator := .Paginate $pages }}
 
-  {{ with .Content }}
-    {{ . }}
-  {{ end }}
+<div class="py-2 flex flex-col gap-1">
+  <h3 class="title-small">Academic timeline</h3>
 </div>
 
-<section class="py-10 flex flex-col gap-10">
+<hr/>
+
+<section class="flex flex-col gap-10">
   <ul class="taxonomy-list">
     {{ range $index, $pages := .Pages }} 
       <li>
@@ -25,5 +20,15 @@
     {{ end }}
   </ul>
 </section>
+
+<section class="pb-10 flex flex-col gap-10">
+  {{ range $index, $pages := $paginator.Pages }} 
+    {{ partial "list/default" . }} 
+  {{ end }}
+</section>
+
+{{ if gt $paginator.TotalPages 1 }}
+  {{ partial "list/pagination" . }} 
+{{ end }}
 
 {{ end }}

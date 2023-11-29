@@ -348,6 +348,10 @@
   #content span.task-list + ul {
     @apply list-none;
   }
+  
+  #content .contact-more {
+    @apply no-underline inline-flex gap-2 text-base font-semibold items-center text-emerald-700 hover:text-emerald-600 dark:text-emerald-300 dark:hover:text-emerald-200;  
+  }
 
   /* Misc */
   #site-title {
@@ -366,16 +370,20 @@
     @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300;
   }
 
+  .title-median {
+    @apply text-3xl leading-snug font-bold text-gray-900 dark:text-gray-300;
+  }
+
   .title-small {
     @apply text-2xl font-extrabold text-gray-900 dark:text-gray-300;
   }
 
   .introduction {
-    @apply font-extrabold text-gray-900 dark:text-gray-300;
+    @apply font-bold text-gray-900 dark:text-gray-300;
   }
 
   .introduction span {
-    @apply font-extrabold text-emerald-700 dark:text-emerald-300;
+    @apply font-bold text-emerald-700 dark:text-emerald-300;
   }
 
   .information {
@@ -397,4 +405,5 @@
   .source {
     @apply italic text-gray-400;
   }
+  
 }

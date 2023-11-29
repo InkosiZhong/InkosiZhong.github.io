@@ -4,16 +4,20 @@
     {{- partial "head/index" . -}}
   </head>
 
-  <body class="max-w-screen-md mx-auto">
+  <body class="mx-auto">
     <style>
       body {
         padding-left: 30px;
         padding-right: 30px;
+        max-width: 828px;
       }
     </style>
     <div class="header">
       {{ partial "header/index" . }}
-      {{ partial "header/theme-button" . }}
+      <!--{{ partial "header/theme-button" . }}-->
+    </div>
+    <div>
+      {{ partial "header/nav" . }}
     </div>
   
     <main id="content">

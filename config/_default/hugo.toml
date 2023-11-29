@@ -3,10 +3,10 @@ copyright = "{year}" # To make 2007 - 2022. Just add before {year} example: 2007
 languageCode = 'en-US'
 defaultContentLanguage = 'en'
 theme = 'enhanced-lowkey'
-title = "Tianxiong Zhong's HOMEPAGE"
+title = "Tianxiong Zhong's Homepage"
 enableRobotsTXT = true
 summaryLength = 15
-paginate = 5
+paginate = 99
 
 
 [markup]

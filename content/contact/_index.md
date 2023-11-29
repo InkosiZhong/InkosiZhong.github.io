@@ -1,7 +1,7 @@
 ---
-title: "Tags"
+title: "Contact"
 draft: false
-type: taxonomies
+type: contact
 layout: "home"
 ---
 See more details ...
