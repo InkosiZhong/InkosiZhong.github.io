@@ -4,7 +4,7 @@ draft: false
 date: 2022-03-20
 description: "Multi-modality (i.e., multi-sensor) data is widely used in various vision tasks for more accurate or robust perception. This work proposes a multi-modality compression framework for infrared and visible image pairs by exploiting the cross-modality redundancy."
 rating: "CCF-A"
-author: "Co-first author"
+author: "Co-1st auth."
 period: "B.S."
 link: "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:u5HHmVD_uO8C"
 pdf: "http://openaccess.thecvf.com/content/CVPR2022/papers/Lu_Learning_Based_Multi-Modality_Image_and_Video_Compression_CVPR_2022_paper.pdf"
