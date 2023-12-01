@@ -2,6 +2,18 @@
 
 <article class="flex flex-col gap-10">
   <header class="flex flex-col gap-2">
+    <style>
+      @media screen and (max-width: 600px) {
+        .link {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .link-nl {
+          display: none;
+        }
+      }
+    </style>
     <h2 class="title-median">{{ .Title }}</h2>
 
     <div class="meta sm:flex-row">
@@ -9,20 +21,18 @@
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
         {{ .PublishDate.Format "02/01/2006" }}
       </time>
+      {{ if .Params.Period }}
+        <nobr>{{ .Params.Period }}</nobr>
+      {{ end }}
 
-      {{/* Categories */}} 
+      <!--{{/* Categories */}} 
       {{ with (.GetTerms "categories") }} — 
         {{ range . }}
           <a class="categories" href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
             {{ .LinkTitle }}
           </a>
-        {{ end }} 
-      {{ end }}
-      
-
-      {{ if .Params.Period }}
-        <nobr>{{ .Params.Period }}</nobr>
-      {{ end }}
+        {{ end }}
+      {{ end }}-->
 
       {{ if .Params.Rating }}
         <nobr>{{ .Params.Rating }}</nobr>
@@ -33,13 +43,27 @@
       {{ end }}
       
       {{ if .Params.link }}
-      <a class="categories" href="{{ .Params.link }}">
+      <a class="categories link" href="{{ .Params.link }}">
         <nobr>Link</nobr>
       </a>
       {{ end }}
       
       {{ if .Params.pdf }}
-      <a class="categories" href="{{ .Params.pdf }}">
+      <a class="categories link" href="{{ .Params.pdf }}">
+        <nobr>PDF</nobr>
+      </a>
+      {{ end }}
+    </div>
+
+    <div class="meta sm:flex-row" style="margin-top: -20px;">
+      {{ if .Params.link }}
+      <a class="categories link-nl" href="{{ .Params.link }}">
+        <nobr>Link</nobr>
+      </a>
+      {{ end }}
+      
+      {{ if .Params.pdf }}
+      <a class="categories link-nl" href="{{ .Params.pdf }}">
         <nobr>PDF</nobr>
       </a>
       {{ end }}
