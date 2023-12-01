@@ -1,6 +1,7 @@
 {{ define "main" }} 
 
-{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} 
+<!-- {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} -->
+{{ $pages :=site.RegularPages }}
 {{ $paginator := .Paginate $pages }}
 
 <div class="py-2 flex flex-col gap-1">
