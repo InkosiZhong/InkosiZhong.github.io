@@ -1,0 +1,18 @@
+<div class="meta sm:flex-row">
+    {{/* Publish date */}}
+    <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
+    {{ .PublishDate.Format "02/01/2006" }}
+    </time>
+    {{ if .Params.Period }}
+    <nobr>{{ .Params.Period }}</nobr>
+    {{ end }}
+
+    {{/* Categories */}} 
+    {{ with (.GetTerms "categories") }} — 
+    {{ range . }}
+        <a class="categories" href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
+        {{ .LinkTitle }}
+        </a>
+    {{ end }}
+    {{ end }}
+</div>
