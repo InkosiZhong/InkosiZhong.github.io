@@ -12,12 +12,12 @@ tags:
 
 ![Chopsticks.gif](https://s2.loli.net/2023/04/07/Y1O3G2udeV597Jg.gif)
 
-### Who need this
+### Who need it
 
 - If you use a single computing node, and often run complex computing jobs, limited by hardware bottlenecks (RAM size, GPU memory size, number of CPU cores, etc.)
 - When you are ready to leave, and the tasks you have submitted has not yet finished running, but you still wanna append some new tasks so that it has done more work when you come back.
 
-### Who don't need this
+### Who don't need it
 
 - If you have a large-scale computing cluster that can sufficiently parallelize the submitted tasks, please use SLURM.
 - If your computing tasks do not take up very much hardware resources, please submit them manually in the terminal directly, don't worry about them being interrupted.
