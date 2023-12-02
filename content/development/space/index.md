@@ -14,15 +14,15 @@ tags:
 ### Background Removal
 Space can remove the background in the courseware (PPT etc.), making it easier to unify the style of notes.
 
-![remove background](rmbg.png)
+![remove background](https://s2.loli.net/2023/12/02/3Pal48LcRSxnMC5.png)
 
 ### Smart OCR
 Space will automatically detect whether the text content belongs to the same paragraph, simplifying user operations as much as possible. When the content does not belong to the same paragraph, Space provides an efficient candidate window.
 
-![smart ocr](ocr.png)
+![smart ocr](https://s2.loli.net/2023/12/02/Lnc71SRwtK8DTh9.png)
 
 ### LaTeX Formula Extraction
 Formulas are another type of items that appear frequently in courseware. 
 Space can quickly extract the LaTeX code corresponding to the formula for easy reproduction.
 
-![latex extraction](latex.png)
+![latex extraction](https://s2.loli.net/2023/12/02/UvetTzsw4VgOaEo.png)

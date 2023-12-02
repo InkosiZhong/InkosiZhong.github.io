@@ -8,3 +8,10 @@ platform: 'IOS'
 tags:
   - Developments
 ---
+
+![Texal](https://s2.loli.net/2023/12/02/QYr3WkOjEPNhXbI.png)
+
+### Tutorial
+Texal support rich representations, including operators, functions, variables, digital systems and high-level expressions.
+
+![Tutorial](https://s2.loli.net/2023/12/02/cI1Fu6OWqbKDTVZ.jpg)
