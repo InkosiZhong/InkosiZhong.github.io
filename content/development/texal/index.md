@@ -9,9 +9,9 @@ tags:
   - Developments
 ---
 
-![Texal](https://s2.loli.net/2023/12/02/I4BCGpbqijUTzYk.png)
+![Texal](https://s2.loli.net/2023/12/02/wVe4OpM8aYCIcn2.png)
 
 ### Tutorial
 Texal support rich representations, including operators, functions, variables, digital systems and high-level expressions.
 
-![Tutorial](https://s2.loli.net/2023/12/02/6ZSbxL3yWT2Kmjc.png)
+![Tutorial](https://s2.loli.net/2023/12/02/ynjbLhkUMtOQvo2.jpg)
