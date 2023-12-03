@@ -21,6 +21,6 @@ The following 5-minute video is a brief introduction required for the CVPR 2022 
 
 {{< rawhtml >}}
 <video controls width="100%">
-  <source src="http://storage.live.com/items/DC7EE90AFDCC4B11!330431:/introduction_720p_x264.mp4" type="video/mp4">
+  <source src="http://storage.live.com/items/DC7EE90AFDCC4B11!330434:/introduction_720p_x264.mp4" type="video/mp4">
 </video>
 {{< /rawhtml >}}
