@@ -3,10 +3,20 @@
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </h1>
   
-  <span class="date">
-    <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
-      {{ .PublishDate.Format "02/01/2006" }}
-    </time>
+  <span>
+    <span class="date">
+      <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
+        {{ .PublishDate.Format "02/01/2006" }}
+      </time>
+      -
+    </span>
+    {{ with (.GetTerms "tags") }}
+    {{ range . }}
+        <a class="tags" href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
+        {{ .LinkTitle }}
+        </a>
+    {{ end }}
+    {{ end }}
   </span>
 
   <div class="description">

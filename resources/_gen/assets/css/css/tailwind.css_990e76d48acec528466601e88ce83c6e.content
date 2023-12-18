@@ -1084,6 +1084,29 @@ nav a.active {
   --tw-text-opacity: 1;
   color: rgb(167 243 208 / var(--tw-text-opacity));
 }
+#content .tags {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+#content .tags:hover {
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+:is(.dark #content .tags) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+:is(.dark #content .tags:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
+}
 #content .alert-box {
   margin-bottom: 1.25rem;
   border-top-width: 4px;

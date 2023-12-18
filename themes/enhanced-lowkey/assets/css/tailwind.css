@@ -264,6 +264,10 @@
   #content .read-more {
     @apply no-underline inline-flex gap-2 text-sm font-semibold items-center text-emerald-700 hover:text-emerald-600 dark:text-emerald-300 dark:hover:text-emerald-200;  
   }
+
+  #content .tags {
+    @apply no-underline inline-flex gap-2 text-sm font-semibold items-center text-emerald-700 hover:text-emerald-600 dark:text-gray-400 dark:hover:text-emerald-200;
+  }
   
   #content .footnotes {
     @apply text-sm;
