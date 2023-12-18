@@ -1105,7 +1105,8 @@ nav a.active {
 }
 :is(.dark #content .tags:hover) {
   --tw-text-opacity: 1;
-  color: rgb(167 243 208 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+  text-decoration-line: underline;
 }
 #content .alert-box {
   margin-bottom: 1.25rem;
