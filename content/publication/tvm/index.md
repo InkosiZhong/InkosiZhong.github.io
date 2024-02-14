@@ -6,6 +6,8 @@ description: "This study introduces a novel tile-based video management framewor
 rating: "CCF-A"
 author: "1st auth."
 period: "M."
+link: "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:9yKSN-GCB0IC"
+pdf: "https://www.vldb.org/pvldb/vol17/p671-zhang.pdf"
 tags:
   - Publications
 ---
