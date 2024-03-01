@@ -10,7 +10,7 @@ tags:
 ---
 
 
-![plan](plan.png)
+![plan](https://s2.loli.net/2024/03/01/WjwUymBCQrxgEHZ.png)
 
 ### Modern Design
 rOund is a modern design style running route planning app. 
@@ -20,4 +20,4 @@ Users sometimes hope that the end of the exercise will return to or be close to 
 Now with the help of rOund, users can easily plan the shortest closed route that meets the mileage requirements.
 rOund uses smooth animation to track the user's movement, record their movement information and give evaluation.
 
-![run](run.png)
+![run](https://s2.loli.net/2024/03/01/HFiwTyvqhf1g745.png)
