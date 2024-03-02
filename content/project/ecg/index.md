@@ -2,14 +2,14 @@
 title: "ECG Acquisition Equipment and Analysis Software"
 draft: false
 date: 2021-02-03
-description: "This project includes using Altum Designer to draw PCB, writing UART communication programs, and developing software based on QT for ECG signal analysis, recording and visualization."
-language: 'Altum Designer/QT'
+description: "This project includes using Altium Designer to draw PCB, writing UART communication programs, and developing software based on QT for ECG signal analysis, recording and visualization."
+language: 'Altium Designer/QT'
 platform: 'Windows'
 tags:
   - Projects
 ---
 ### PCB Design
-The PCB is drawn with Altum Designer.
+The PCB is drawn with Altium Designer.
 It contains two chips, STM32 and ADS1298, a low-noise analog-to-digital converter for EEG and biopotential measurements.
 It interacts with the host computer through the UART protocol and can store data in a TF card.
 
