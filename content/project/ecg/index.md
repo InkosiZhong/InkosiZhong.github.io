@@ -8,7 +8,7 @@ tags:
 ---
 ### PCB Design
 The PCB is drawn with Altum Designer.
-It contains two chips, STM32 and ADS1298, a low-noise analog-to-digital converter for EEGand Biopotential Measurements.
+It contains two chips, STM32 and ADS1298, a low-noise analog-to-digital converter for EEG and biopotential measurements.
 It interacts with the host computer through the UART protocol and can store data in a TF card.
 
 ![pcb](https://s2.loli.net/2024/03/01/bk2LE1jy5mchZXd.jpg)
