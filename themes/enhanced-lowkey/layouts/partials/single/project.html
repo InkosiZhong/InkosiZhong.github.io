@@ -15,4 +15,12 @@
         </a>
     {{ end }}
     {{ end }}
+
+    {{ if .Params.Language }}
+    <nobr>{{ .Params.Language }}</nobr>
+    {{ end }}
+
+    {{ if .Params.Platform }}
+    <nobr>{{ .Params.Platform }}</nobr>
+    {{ end }}
 </div>
