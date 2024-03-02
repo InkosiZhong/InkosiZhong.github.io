@@ -3,6 +3,8 @@ title: "Analysis Software for Bulk Call Generator"
 draft: false
 date: 2023-05-17
 description: "This project builds a product-level bulk call generator QJC06D. In the project I am responsible for the design of a analysis software based on C# and .Net framework."
+language: 'C#/.Net'
+platform: 'Windows'
 tags:
   - Projects
 ---

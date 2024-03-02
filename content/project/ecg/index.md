@@ -3,6 +3,8 @@ title: "ECG Acquisition Equipment and Analysis Software"
 draft: false
 date: 2021-02-03
 description: "This project includes using Altum Designer to draw PCB, writing UART communication programs, and developing software based on QT for ECG signal analysis, recording and visualization."
+language: 'Altum Designer/QT'
+platform: 'Windows'
 tags:
   - Projects
 ---
