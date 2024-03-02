@@ -6,8 +6,6 @@ description: "This project includes using Altum Designer to draw PCB, writing UA
 tags:
   - Projects
 ---
-This project includes using Altum Designer to draw PCB, writing UART communication programs, and developing software based on QT for ECG signal analysis, recording and visualization.
-
 ### PCB Design
 The PCB is drawn with Altum Designer.
 It contains two chips, STM32 and ADS1298, a low-noise analog-to-digital converter for EEGand Biopotential Measurements.
