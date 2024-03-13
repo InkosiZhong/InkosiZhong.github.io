@@ -10,63 +10,94 @@ tags:
   - Developments
 ---
 
-![Chopsticks.gif](https://s2.loli.net/2023/04/07/Y1O3G2udeV597Jg.gif)
+![chopsticks2.gif](https://s2.loli.net/2024/03/13/3FoPRuJ6ViLhjY2.gif)
 
 ### Who need it
 
 - If you use a single computing node, and often run complex computing jobs, limited by hardware bottlenecks (RAM size, GPU memory size, number of CPU cores, etc.)
 - When you are ready to leave, and the tasks you have submitted has not yet finished running, but you still wanna append some new tasks so that it has done more work when you come back.
 
-### Who don't need it
-
-- If you have a large-scale computing cluster that can sufficiently parallelize the submitted tasks, please use SLURM.
-- If your computing tasks do not take up very much hardware resources, please submit them manually in the terminal directly, don't worry about them being interrupted.
-
 ### Usage
 
-Chopsticks supports 6 commands: redirect, submit, cancel, ls, clean, quit, you can use them starting with  `c` , the first letter of the Chopsticks
+Chopsticks supports 7 commands: redirect, submit, cancel, restart, ls, clean, quit, you can use them with  `cs`
 
-#### creidirect
+#### cs reidirect
 
 ```bash
-credirect out # redirect the output into a file
-credirect /dev/pts/5 # redirect to a terminal
-credirect # or redirect to current terminal
+usage: cs redirect [--dst DST]
+
+redirect: redirect the output
+
+optional arguments:
+  --dst DST   redirect destination
+# Examples
+cs redirect # redirect to current terminal
+cs redirect --dst out # redirect the output into a file
+cs redirect --dst /dev/pts/5 # redirect to a terminal
 ```
 
-#### csubmit
+#### cs submit
 
 ```bash
-csubmit command arg1 arg2 ...
-# Example
+usage: cs submit cmd [cmd ...]
+
+submit: submit a new task
+
+positional arguments:
+  cmd         command you want to submit
+# Examples
 # if you have a add.py that input 2 args, such as
 python test.py 0 1
 # now you can submit them only by adding csubmit
-csubmit python test.py 0 1
+cs submit python test.py 0 1
 # Chopsticks will give you an unique id for this task
 > [submit] id=0
 ```
 
-#### ccancel
+#### cs cancel
 
 ```bash
-ccancel id # cancel a specified task
-ccancel # cancel all tasks that are waiting
-# Example
-csubmit python test.py 0 1
+usage: cs cancel [--id ID]
+
+cancel: cancel a task by ID
+
+optional arguments:
+  --id ID     task ID you want to cancel
+# Examples
+cs submit python test.py 0 1
 > [submit] id=0
-csubmit python test.py 0 1
+cs submit python test.py 0 1
 > [submit] id=1
-ccancal 1
+cs cancal --id 1
 > [cancel] id=1
 ```
 
-#### cls
+#### cs restart
 
 ```bash
-usage: cls [-h] [-l] [-p] [-n LATEST_N] [--done] [--not-done]
+usage: cs restart --id ID
+
+restart: restart a task by ID
+
 optional arguments:
-  -h, --help            show this help message and exit
+  --id ID     task ID you want to restart
+# Example
+cs submit python test.py 0 1
+> [submit] id=0
+cs cancel 0
+> [cancel] id=0
+cs restart 0
+> [restart] id=0->1
+```
+
+#### cs ls
+
+```bash
+usage: cs ls [-l] [-p] [-n LATEST_N] [--done] [--not-done]
+
+ls: list all tasks
+
+optional arguments:
   -l, --long            show long info
   -p, --pid             show PID
   -n LATEST_N, --latest-n LATEST_N
@@ -74,44 +105,44 @@ optional arguments:
   --done                show the records that are already finished|crashed|cancelled
   --not-done            show the records that are still running|waiting
 # Example
-cls
+cs ls
 >
   id  state      submit    command
 ----  ---------  --------  ------------------
    0  finished   22:35:02  python test.py 0 1
    1  cancelled  22:35:03  python test.py 0 1
 
-cls -n 1 # the latest one
+cs ls -n 1 # the latest one
 >
   id  state      submit    command
 ----  ---------  --------  ------------------
    1  cancelled  22:35:03  python test.py 0 1
    
-cls -n 1 -l --done # the latest one that is done
+cs ls -n 1 -l --done # the latest one that is done
 >
   id  state      submit    start     end       duration        command
 ----  ---------  --------  --------  --------  --------------- ------------------
    1  cancelled  22:35:03  22:35:03  22:35:03  0 days 00:00:00 python test.py 0 1
 ```
 
-#### cclean
+#### cs clean
 
 ```bash
-cclean
 # Example
-cclean
+cs clean
 > [clean] 2 tasks
-cls
+cs ls
 >
   id  state      submit    command
 ----  ---------  --------  ------------------
 ```
 
-#### cquit
-
+#### cs quit
 ```bash
-usage: cquit [-h] [-f]
+usage: cs quit [-f]
+
+cquit: quit the guard process
+
 optional arguments:
-  -h, --help   show this help message and exit
   -f, --force  quit anyway, ignoring the running|waiting tasks
 ```
