@@ -5,6 +5,7 @@ date: 2023-11-17
 description: "This study introduces a novel mask-free RIS method, called GTMS, which utilizes both structural and semantic information. It achieves SOTA performance compared with other mask-free RIS methods and even outperforms many fully-supervised RIS methods."
 author: "2nd auth."
 period: "M."
+link: "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:2osOgNQ5qMEC"
 pdf: "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08341.pdf"
 tags:
   - Publications

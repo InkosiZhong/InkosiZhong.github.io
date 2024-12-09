@@ -47,6 +47,12 @@
     <nobr>PDF</nobr>
     </a>
     {{ end }}
+    
+    {{ if .Params.demo }}
+    <a class="categories link" href="{{ .Params.demo }}">
+    <nobr>Demo</nobr>
+    </a>
+    {{ end }}
 </div>
 <div class="meta sm:flex-row" style="margin-top: -20px;">
     {{ if .Params.link }}
