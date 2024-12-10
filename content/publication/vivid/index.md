@@ -2,8 +2,8 @@
 title: "[arXiv] VIVID-10M: A Dataset and Baseline for Versatile and Interactive Video Local Editing"
 draft: false
 date: 2024-11-24
-description: "This study introduces a novel mask-free RIS method, called GTMS, which utilizes both structural and semantic information. It achieves SOTA performance compared with other mask-free RIS methods and even outperforms many fully-supervised RIS methods."
-author: "1st. auth."
+description: "This study introduces VIVID-10M, the first large-scale high-quality dataset for video local editing. It also presents VIVID, a robust video local editing model that supports entity addition, modification, and deletion. Finally, it propose a Keyframe-guided Interactive Video Editing (KIVE) mechanism that enhances user experience by enabling iterative keyframe edits."
+author: "Co-1st. auth."
 period: "M."
 link: "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:UeHWp8X0CEIC"
 pdf: "https://arxiv.org/pdf/2411.15260"
