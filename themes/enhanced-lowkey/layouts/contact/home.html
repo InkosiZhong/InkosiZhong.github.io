@@ -10,19 +10,37 @@
     <a class="contact-more" href="mailto:inkosizhong@gmail.com">
       Email: inkosizhong@gmail.com
       <span class="w-4 h-4 stroke-2">
-        {{ partial "utils/icon" "arrow-right" }}
+        {{ partial "utils/icon" "send-email" }}
       </span>
     </a>
 </div>
 <div class="mt-2">
-    <a class="contact-more">
+    <a class="contact-more" onclick="showQRCode()">
       Wechat: InkosiZhong
+      <span class="w-4 h-4 stroke-2">
+        {{ partial "utils/icon" "qrcode" }}
+      </span>
     </a>
 </div>
-<div class="mt-2">
-    <a class="contact-more">
-      QQ: 2500715258
-    </a>
+
+<div id="qr-modal" class="qr-modal hidden">
+  <div>
+      <img src="https://s2.loli.net/2024/12/29/AHNc9wYXzEIi2ZW.png" alt="QR Code" class="qr-code-image">
+  </div>
 </div>
+
+<style>
+  .qr-code-image {
+      max-width: 256px;
+      height: auto;
+  }
+</style>
+
+<script>
+  function showQRCode() {
+      const modal = document.getElementById('qr-modal');
+      modal.classList.remove('hidden');
+  }
+</script>
 
 {{ end }}
