@@ -258,7 +258,7 @@
   }
   
   #content .description {
-    @apply text-gray-600 dark:text-gray-300 text-base;
+    @apply text-gray-600 dark:text-gray-300 text-sm;
   }
   
   #content .read-more {
@@ -383,7 +383,7 @@
   }
 
   .introduction {
-    @apply font-bold text-gray-900 dark:text-gray-300;
+    @apply font-bold text-base text-gray-900 dark:text-gray-300;
   }
 
   .introduction span {
@@ -391,15 +391,15 @@
   }
 
   .information {
-    @apply text-xl font-bold text-gray-900 dark:text-gray-300;
+    @apply text-lg font-bold text-gray-900 dark:text-gray-300;
   }
 
   .information span {
-    @apply text-xl font-bold text-emerald-700 dark:text-emerald-300;
+    @apply text-lg font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900 rounded-sm px-2;
   }
 
   .author {
-    @apply text-gray-900 dark:text-gray-300;
+    @apply text-sm text-gray-900 dark:text-gray-300;
   }
 
   .author span {
@@ -407,6 +407,10 @@
   }
 
   .source {
-    @apply italic text-gray-400;
+    @apply text-sm italic text-gray-400;
+  }
+
+  .source span {
+    @apply text-sm italic font-bold text-emerald-700 dark:text-emerald-500;
   }
 }

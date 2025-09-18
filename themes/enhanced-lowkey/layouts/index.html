@@ -3,13 +3,6 @@
 {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} 
 {{ $paginator := .Paginate $pages }}
 
-<!--
-<div class="introduction">
-  I am a master's student at the <span>Beijing Institute of Technology</span>. 
-  My research interests focus on <span>video database</span>, <span>video compression</span> and <span>deep learning</span>.
-</div>
--->
-
 <div class="py-2 flex flex-col gap-1">
   <h3 class="title-small">Publications</h3>
 </div>
@@ -18,59 +11,67 @@
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>[arXiv]</span> VFRTok: Variable Frame Rates Video Tokenizer with Duration-Proportional Information Assumption
+    VFRTok: Variable Frame Rates Video Tokenizer with Duration-Proportional Information Assumption
   </div>
   <div class="author">
     <span>Tianxiong Zhong</span>, Xingye Tian, Boyuan Jiang, Xuebo Wang, Xin Tao, Pengfei Wan, and Zhiwei Zhang
   </div>
-  <div style="display: flex; gap: 30px;">
-    <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:zYLM7Y9cAGgC">
-      Google Scholar
-      <span class="w-4 h-4 stroke-2">
-        {{ partial "utils/icon" "arrow-right" }}
-      </span>
-    </a>
+  <div class="source">
+    arXiv preprint arXiv
   </div>
 </div>
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>[arXiv]</span> VIVID-10M: A Dataset and Baseline for Versatile and Interactive Video Local Editing
+    VIVID-10M: A Dataset and Baseline for Versatile and Interactive Video Local Editing
   </div>
   <div class="author">
     Jiahao Hu, <span>Tianxiong Zhong</span>, Xuebo Wang, Boyuan Jiang, Xingye Tian, Fei Yang, Pengfei Wan, and Di Zhang
   </div>
-  <div style="display: flex; gap: 30px;">
-    <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:UeHWp8X0CEIC">
-      Google Scholar
-      <span class="w-4 h-4 stroke-2">
-        {{ partial "utils/icon" "arrow-right" }}
-      </span>
-    </a>
-    <a class="read-more" href="https://inkosizhong.github.io/VIVID/">
-      Demo
-      <span class="w-4 h-4 stroke-2">
-        {{ partial "utils/icon" "arrow-right" }}
-      </span>
-    </a>
+  <div class="source">
+    arXiv preprint arXiv
   </div>
 </div>
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>[ICDE 2025]</span> QaVA: Query-aware Video Analysis Framework Based on Data Access Pattern
+    QaVA: Query-aware Video Analysis Framework Based on Data Access Pattern
   </div>
   <div class="author">
     <span>Tianxiong Zhong</span>, Zhiwei Zhang, Yihang Fu, Guo Lu, Ye Yuan, and Guoren Wang
   </div>
   <div class="source">
-    IEEE International Conference on Data Engineering (ICDE),2025
+    <span>IEEE International Conference on Data Engineering (ICDE),2025</span>
   </div>
 </div>
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>[ECCV 2024]</span> GTMS: A Gradient-driven Tree-guided Mask-free Referring Image Segmentation Method
+    TVM: A Tile-based Video Management Framework
+  </div>
+  <div class="author">
+    <span>Tianxiong Zhong</span>, Zhiwei Zhang, Guo Lu, Ye Yuan, Yu-Ping Wang, and Guoren Wang
+  </div>
+  <div class="source">
+    <span>International Conference on Very Large Data Bases (VLDB),2024</span>
+  </div>
+</div>
+
+<div class="py-2 flex flex-col gap-1">
+  <div class="information">
+    Learning based Multi-modality Image and Video Compression
+  </div>
+  <div class="author">
+    Guo Lu, <span>Tianxiong Zhong</span>, Jing Geng, Qiang Hu, and Dong Xu
+  </div>
+  <div class="source">
+    <span>IEEE Conference on Computer Vision and Pattern Recognition (CVPR),2022</span>
+  </div>
+</div>
+
+<div class="py-2 flex flex-col gap-1">
+  <div class="information">
+    GTMS: A Gradient-driven Tree-guided Mask-free Referring Image Segmentation Method
   </div>
   <div class="author">
     Haoxin Lv, <span>Tianxiong Zhong</span>, and Sanyuan Zhao
@@ -78,71 +79,11 @@
   <div class="source">
     European Conference on Computer Vision (ECCV),2024
   </div>
-  <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:2osOgNQ5qMEC">
-    Google Scholar
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
 </div>
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>[VLDB 2024]</span> TVM: A Tile-based Video Management Framework
-  </div>
-  <div class="author">
-    <span>Tianxiong Zhong</span>, Zhiwei Zhang, Guo Lu, Ye Yuan, Yu-Ping Wang, and Guoren Wang
-  </div>
-  <div class="source">
-    International Conference on Very Large Data Bases (VLDB),2024
-  </div>
-  <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:9yKSN-GCB0IC">
-    Google Scholar
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>[CVPR 2022]</span> Learning based Multi-modality Image and Video Compression
-  </div>
-  <div class="author">
-    Guo Lu, <span>Tianxiong Zhong</span>, Jing Geng, Qiang Hu, and Dong Xu
-  </div>
-  <div class="source">
-    IEEE Conference on Computer Vision and Pattern Recognition (CVPR),2022
-  </div>
-  <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:u5HHmVD_uO8C">
-    Google Scholar
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>[JBUAA]</span> A Transformer based deep conditional video compression
-  </div>
-  <div class="author">
-    Guo Lu, <span>Tianxiong Zhong</span>, Jing Geng
-  </div>
-  <div class="source">
-    Journal of Beijing University of Aeronautics and Astronautics (JBUAA)
-  </div>
-  <a class="read-more" href="https://kns.cnki.net/kcms2/article/abstract?v=Eo9-C_M6tLmXWOkD-sNcF8BKn9DBMuppP-IKA9SkB45YcOxBBYdKwTcuyw9t_Fo7eyrLdW8v31uQkBG7qU0ImBNH6o8WxShIOghQJjQX0XvCD3GULkF-bKaKXF32KVQSmAik21sDccE=&uniplatform=NZKPT&language=CHS">
-    CNKI
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>[TCSVT]</span> Preprocessing Enhanced Image Compression for Machine Vision
+    Preprocessing Enhanced Image Compression for Machine Vision
   </div>
   <div class="author">
     Guo Lu, Xingtong Ge, <span>Tianxiong Zhong</span>, Jing Geng, Li Chen, Li Song
@@ -150,151 +91,19 @@
   <div class="source">
     IEEE Transactions on Circuits and Systems for Video Technology
   </div>
-  <a class="read-more" href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ZkcJasgAAAAJ&citation_for_view=ZkcJasgAAAAJ:u-x6o8ySG0sC">
-    Google Scholar
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1" style="margin-top: 20px;">
-  <h3 class="title-small">Developments</h3>
-</div>
-
-<hr/>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>Space</span>: Multifunction Screenshot Application based on QT
-  </div>
-  <div class="description">
-    The inspiration for this software comes from when organizing notes. 
-    I hope that taking screenshots from PPT or other materials can remove the background color 
-    and ensure the neatness of the notes.
-  </div>
-  <a class="read-more" href="https://github.com/InkosiZhong/Space">
-    GitHub
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
 </div>
 
 <div class="py-2 flex flex-col gap-1">
   <div class="information">
-    <span>Texal</span>: Text Calculator for IOS based on Swift
+    A Transformer based deep conditional video compression
   </div>
-  <div class="description">
-    I was deeply attracted by Numi (on MacOS) and 
-    wanted to have such a convenient calculator on my mobile phone.
-    Since there is no such software in the AppStore, I have to write one myself.
+  <div class="author">
+    Guo Lu, <span>Tianxiong Zhong</span>, Jing Geng
   </div>
-  <a class="read-more" href="https://github.com/InkosiZhong/Texal">
-    GitHub
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>rOund</span>: Running Route Planning App for Android based on Kotlin
-  </div>
-  <div class="description">
-    The idea comes from the rigid mileage requirements of the campus sports app.
-    rOund allows users to easily plan the shortest closed route that meets mileage requirements.
+  <div class="source">
+    Journal of Beijing University of Aeronautics and Astronautics (JBUAA)
   </div>
 </div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>Chopsticks</span>: Sequential Task  Manager for Linux and MacOS
-  </div>
-  <div class="description">
-    I often run complex computing jobs on a single node.
-    When I am ready to leave, and the submitted task has not yet finished, 
-    I still wanna append new tasks so that it has done more work when I come back.
-    Therefore I build a task manager similar to SLURM, but in a serial execution style.
-  </div>
-  <a class="read-more" href="https://github.com/InkosiZhong/Chopsticks">
-    GitHub
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>Reboot-to-Windows</span>: Simple service to reboot Linux to ANY system
-  </div>
-  <div class="description">
-    Many computing computers I use have multi-systems (Windows+Ubuntu). 
-    I use GRUB to select the system, and the default one is Linux. 
-    I need to be able to reboot from Linux to any other system when the computer is unattended.
-  </div>
-  <a class="read-more" href="https://github.com/InkosiZhong/reboot-to-windows">
-    GitHub
-    <span class="w-4 h-4 stroke-2">
-      {{ partial "utils/icon" "arrow-right" }}
-    </span>
-  </a>
-</div>
-
-<div class="py-2 flex flex-col gap-1" style="margin-top: 20px;">
-  <h3 class="title-small">Projects</h3>
-</div>
-
-<hr/>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>Automatic Refueling Robot</span>
-  </div>
-  <div class="description">
-    This project is the starting point of my scientific research.
-    Through my own exploration, I learned several programming languages, 
-    Linux usage, basic computer vision algorithms, Socket communication and GUI programming. 
-    I got started with machine learning and deep learning.
-    Meanwhile, I accumulated some experience in edge device transplantation.
-  </div>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>ECG Acquisition Equipment and Analysis Software</span>
-  </div>
-  <div class="description">
-    This project includes using Altium Designer to draw PCB, 
-    writing UART communication programs, and developing software based on QT for ECG signal analysis, recording and visualization.
-  </div>
-</div>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    <span>Analysis Software for Bulk Call Generator</span>
-  </div>
-  <div class="description">
-    This project builds a product-level bulk call generator QJC06D. 
-    In the project I am responsible for the design of a analysis software based on C# and .Net framework.
-  </div>
-</div>
-
-<!--
-<div class="py-2 flex flex-col gap-1">
-  <h3 class="title-small">{{ i18n "latestPosts" }}...</h3>
-</div>
-
-<hr/>
-
-<section class="pb-10 flex flex-col gap-10">
-  {{ range $index, $pages := $paginator.Pages }} 
-    {{ partial "list/default" . }} 
-  {{ end }}
-</section>
--->
 
 {{ if gt $paginator.TotalPages 1 }}
   {{ partial "list/pagination" . }} 

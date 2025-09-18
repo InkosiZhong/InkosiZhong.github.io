@@ -28,11 +28,11 @@
 #    url = "https://ko-fi.com/nixentric"
 #    weight = 5
 
-[[main]]
-    identifier = "readmore"
-    name = "Read more"
-    url = "/tags"
-    weight = 6
+#[[main]]
+#    identifier = "readmore"
+#    name = "Read more"
+#    url = "/tags"
+#    weight = 6
 
 [[main]]
     identifier = "contact"
