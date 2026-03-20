@@ -391,11 +391,11 @@
   }
 
   .information {
-    @apply text-lg font-bold text-gray-900 dark:text-gray-300;
+    @apply text-base font-bold text-gray-900 dark:text-gray-300;
   }
 
   .information span {
-    @apply text-lg font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900 rounded-sm px-2;
+    @apply text-base font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900 rounded-sm px-2;
   }
 
   .author {
@@ -403,7 +403,7 @@
   }
 
   .author span {
-    @apply underline text-gray-900 dark:text-gray-300;
+    @apply text-sm underline text-gray-900 dark:text-gray-300;
   }
 
   .source {
@@ -412,5 +412,47 @@
 
   .source span {
     @apply text-sm italic font-bold text-emerald-700 dark:text-emerald-500;
+  }
+
+  /* 呼吸灯主容器 */
+  .breathing-indicator {
+    @apply relative inline-flex items-center justify-center mr-2 w-3 h-3;
+  }
+
+  /* 内层实心小圆 */
+  .breathing-indicator .inner-dot {
+    /* 把 size-[6px] 换成了 w-[6px] h-[6px] */
+    @apply absolute w-[6px] h-[6px] rounded-full z-20;
+    @apply bg-emerald-700 dark:bg-emerald-300; 
+  }
+
+  /* 外层光晕 */
+  .breathing-indicator .outer-ring {
+    /* 把 size-full 换成了 w-full h-full */
+    @apply absolute w-full h-full rounded-full z-10;
+    @apply bg-emerald-100 dark:bg-emerald-900; 
+    animation: breathe 2s ease-in-out infinite; 
+  }
+
+  /* 定义呼吸动画：控制缩放比例和透明度 */
+  @keyframes breathe {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5; /* 暗淡、收缩 */
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1; /* 变亮、扩散 */
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5; /* 恢复原状 */
+    }
+  }
+
+  /* 辅助类：让容器内的元素完美横向对齐 */
+  .flex-align-center {
+    display: flex;
+    align-items: center;
   }
 }

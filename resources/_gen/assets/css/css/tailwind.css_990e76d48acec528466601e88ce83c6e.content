@@ -1401,8 +1401,8 @@ nav a.active {
   color: rgb(110 231 183 / var(--tw-text-opacity));
 }
 .information {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1417,8 +1417,8 @@ nav a.active {
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(4 120 87 / var(--tw-text-opacity));
@@ -1440,6 +1440,8 @@ nav a.active {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 .author span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
   text-decoration-line: underline;
@@ -1467,6 +1469,69 @@ nav a.active {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
 }
+/* 呼吸灯主容器 */
+.breathing-indicator {
+  position: relative;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  height: 0.75rem;
+  width: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+/* 内层实心小圆 */
+.breathing-indicator .inner-dot {
+    /* 把 size-[6px] 换成了 w-[6px] h-[6px] */
+    position: absolute;
+    z-index: 20;
+    height: 6px;
+    width: 6px;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 120 87 / var(--tw-bg-opacity)); 
+  }
+:is(.dark .breathing-indicator .inner-dot) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 231 183 / var(--tw-bg-opacity));
+}
+/* 外层光晕 */
+.breathing-indicator .outer-ring {
+    /* 把 size-full 换成了 w-full h-full */
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 250 229 / var(--tw-bg-opacity)); 
+  }
+:is(.dark .breathing-indicator .outer-ring) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 78 59 / var(--tw-bg-opacity));
+}
+.breathing-indicator .outer-ring { 
+    animation: breathe 2s ease-in-out infinite; 
+  }
+/* 定义呼吸动画：控制缩放比例和透明度 */
+@keyframes breathe {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5; /* 暗淡、收缩 */
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1; /* 变亮、扩散 */
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5; /* 恢复原状 */
+    }
+  }
+/* 辅助类：让容器内的元素完美横向对齐 */
+.flex-align-center {
+    display: flex;
+    align-items: center;
+  }
 @media (min-width: 640px) {
 
   .sm\:order-1 {
