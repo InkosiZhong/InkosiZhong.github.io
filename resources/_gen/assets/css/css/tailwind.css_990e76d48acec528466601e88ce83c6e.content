@@ -864,6 +864,9 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -887,6 +890,9 @@ video {
 }
 .w-4 {
   width: 1rem;
+}
+.w-full {
+  width: 100%;
 }
 .flex-none {
   flex: none;
@@ -924,6 +930,9 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -935,6 +944,10 @@ video {
 }
 .stroke-2 {
   stroke-width: 2;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .py-12 {
   padding-top: 3rem;
@@ -955,6 +968,9 @@ video {
 }
 .pt-5 {
   padding-top: 1.25rem;
+}
+.text-justify {
+  text-align: justify;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1313,18 +1329,35 @@ nav a.active {
   line-height: 1.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(4 120 87 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
   text-decoration-line: none;
 }
 #content .contact-more:hover {
   --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 :is(.dark #content .contact-more) {
   --tw-text-opacity: 1;
-  color: rgb(110 231 183 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 :is(.dark #content .contact-more:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+#content .contact-more span {
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+#content .contact-more span:hover {
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+:is(.dark #content .contact-more span) {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity));
+}
+:is(.dark #content .contact-more span:hover) {
   --tw-text-opacity: 1;
   color: rgb(167 243 208 / var(--tw-text-opacity));
 }
@@ -1383,7 +1416,7 @@ nav a.active {
 .introduction {
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
@@ -1392,7 +1425,6 @@ nav a.active {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 .introduction span {
-  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(4 120 87 / var(--tw-text-opacity));
 }
@@ -1417,9 +1449,6 @@ nav a.active {
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(4 120 87 / var(--tw-text-opacity));
 }
@@ -1556,5 +1585,15 @@ nav a.active {
 
   .sm\:gap-10 {
     gap: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 }

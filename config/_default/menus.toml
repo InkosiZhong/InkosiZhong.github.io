@@ -1,8 +1,8 @@
-[[main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+#[[main]]
+#    identifier = "home"
+#    name = "Home"
+#    url = "/"
+#    weight = 1
 
 #[[main]]
 #    identifier = "about"
@@ -34,11 +34,11 @@
 #    url = "/tags"
 #    weight = 6
 
-[[main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact"
-    weight = 7
+#[[main]]
+#    identifier = "contact"
+#    name = "Contact"
+#    url = "/contact"
+#    weight = 7
     
 # Social Media Configuration
 

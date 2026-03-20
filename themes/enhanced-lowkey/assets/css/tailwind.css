@@ -354,7 +354,11 @@
   }
   
   #content .contact-more {
-    @apply no-underline inline-flex gap-2 text-base font-semibold items-center text-emerald-700 hover:text-emerald-600 dark:text-emerald-300 dark:hover:text-emerald-200;  
+    @apply no-underline inline-flex gap-2 text-base font-semibold items-center text-gray-900 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-300;  
+  }
+
+  #content .contact-more span {
+    @apply underline text-emerald-700 hover:text-emerald-600 dark:text-emerald-300 dark:hover:text-emerald-200;  
   }
 
   /* Misc */
@@ -383,11 +387,11 @@
   }
 
   .introduction {
-    @apply font-bold text-base text-gray-900 dark:text-gray-300;
+    @apply font-normal text-base text-gray-900 dark:text-gray-300;
   }
 
   .introduction span {
-    @apply font-bold text-emerald-700 dark:text-emerald-300;
+    @apply text-emerald-700 dark:text-emerald-300;
   }
 
   .information {
@@ -395,7 +399,7 @@
   }
 
   .information span {
-    @apply text-base font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900 rounded-sm px-2;
+    @apply text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900 rounded-sm px-2;
   }
 
   .author {

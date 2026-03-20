@@ -3,44 +3,70 @@
 {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} 
 {{ $paginator := .Paginate $pages }}
 
-<div class="py-2 flex flex-col gap-1">
-  <h3 class="title-small">Experience</h3>
-</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8"> 
 
-<hr/>
-
-<div class="py-2 flex flex-col gap-1">
-  <div class="information flex-align-center">
-    <div class="breathing-indicator">
-      <div class="outer-ring"></div>
-      <div class="inner-dot"></div>
+  <div class="w-full md:w-1/2">
+    <div class="py-2 flex flex-col gap-1">
+      <h3 class="title-small">About Me</h3>
     </div>
-    <div>Kling Team <span>Research Engineer</span></div>
+    <hr/>
+    <div class="py-1 introduction text-justify">
+      <p>I'm currently working on the <span>Kling Team</span>. My research interests focus on <span>generative models</span> and <span>unified multimodal models</span>, with a particular emphasis on <span>visual tokenizer</span> design.</p>
+    </div>
+    <div class="py-1">
+        <a class="contact-more" href="mailto:inkosizhong@gmail.com">
+          Email: <span>inkosizhong@gmail.com</span>
+          <span class="w-4 h-4 stroke-2">
+            {{ partial "utils/icon" "send-email" }}
+          </span>
+        </a>
+        <br/>
+        <a class="contact-more">
+          Wechat: InkosiZhong
+        </a>
+    </div>
   </div>
-  <div class="source">
-    Kuaishou Technology, 2024-present
-  </div>
-</div>
 
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    Beijing Institute of Technology <span>Master</span>
-  </div>
-  <div class="source">
-    Computer Science & Technology, 2023-2026
-  </div>
-</div>
+  <div class="w-full md:w-1/2">
+    <div class="py-2 flex flex-col gap-1">
+      <h3 class="title-small">Experience</h3>
+    </div>
+    <hr/>
 
-<div class="py-2 flex flex-col gap-1">
-  <div class="information">
-    Beijing Institute of Technology <span>Bachelor</span>
-  </div>
-  <div class="source">
-    XUTELI School, 2019-2023
-  </div>
-</div>
+    <div class="py-2 flex flex-col gap-1">
+      <div class="information flex-align-center">
+        <div class="breathing-indicator">
+          <div class="outer-ring"></div>
+          <div class="inner-dot"></div>
+        </div>
+        <div>Kling Team <span class="badge">Research Engineer</span></div>
+      </div>
+      <div class="source">
+        Kuaishou Technology, 2024-present
+      </div>
+    </div>
 
-<div class="py-2 flex flex-col gap-1">
+    <div class="py-2 flex flex-col gap-1">
+      <div class="information">
+        Beijing Institute of Technology <span class="badge">Master</span>
+      </div>
+      <div class="source">
+        Computer Science & Technology, 2023-2026
+      </div>
+    </div>
+
+    <div class="py-2 flex flex-col gap-1">
+      <div class="information">
+        Beijing Institute of Technology <span class="badge">Bachelor</span>
+      </div>
+      <div class="source">
+        XUTELI School, 2019-2023
+      </div>
+    </div>
+  </div>
+
+
+</div> <div class="py-2 flex flex-col gap-1">
   <h3 class="title-small">Publications</h3>
 </div>
 
